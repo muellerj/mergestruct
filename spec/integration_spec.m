@@ -7,7 +7,7 @@ b.x.foo = 'hi there!';
 b.bar = 'lalal';
 b.baz = 3;
 
-c = catstruct(a, b);
+c = mergestruct(a, b);
 
 expect(c.x.y == 1);
 expect(c.x.z == 2);

@@ -5,7 +5,7 @@ b = {1};
 
 found_error = false;
 try
-  c = catstruct(a, b);
+  c = mergestruct(a, b);
 catch exception
   if strcmp(exception.message, 'Both arguments must be structs')
     found_error = true;
