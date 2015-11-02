@@ -20,10 +20,11 @@ clear a b
 a(1).x = 1;
 a(2).x = 1;
 b(1).y = 2;
+b(2).y = 6;
 
 c = mergestruct(a, b);
 
-expect(length(c) == 3);
+expect(length(c) == 4);
 expect(c(1).x == 1);
 expect(c(2).x == 1);
 expect(isempty(c(3).x));

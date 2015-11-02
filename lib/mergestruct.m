@@ -28,7 +28,7 @@ fnames = fieldnames(s2);
 if length(outstruct) > 1 || length(s2) > 1
   for sidx = 1:length(s2)
     for fidx = 1:length(fnames)
-      outstruct(length(outstruct)+sidx).(fnames{fidx}) = s2(sidx).(fnames{fidx});
+      outstruct(length(s1)+sidx).(fnames{fidx}) = s2(sidx).(fnames{fidx});
     end
   end
 else
