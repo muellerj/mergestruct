@@ -26,5 +26,5 @@ c = mergestruct(a, b);
 expect(length(c) == 3);
 expect(c(1).x == 1);
 expect(c(2).x == 1);
-expect(c(3).x == []);
+expect(isempty(c(3).x));
 expect(c(3).y == 2);
